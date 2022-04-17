@@ -58,7 +58,7 @@ function App() {
     emit('click', {
       theMessage: 'Tauri is awesome!'
     });
-    //向后端发起事件
+    //向后端发起全局事件
     appWindow.emit('event-name', { message: 'Tauri is awesome!' });
     //测试后端向前端发起事件
     invoke('my_custom_command_emit');
